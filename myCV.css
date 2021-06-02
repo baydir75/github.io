@@ -27,12 +27,14 @@ nav {
 nav ul {
     display: flex;
     list-style-type: none;
+    margin: 0px;
 }
 
 nav ul li {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0.5em;
+    padding-top: 1rem;
 }
 
 nav a {
@@ -73,6 +75,9 @@ div {
 .ABC {
     float: left;
     font-weight: bolder;
+    font-size: 1.5rem;
+    padding-top: 0px;
+    text-align: center;
 }
 
 span {
@@ -99,4 +104,144 @@ span {
 
 .footer ul {
     list-style-type: none;
+}
+
+.form {
+    width: 70%;
+    margin-left: 10%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.formcontent {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+input {
+    width: 60%;
+}
+
+.btn {
+    width: 20%;
+}
+
+@media screen and (max-width:600px) {
+
+    html {
+        font-size: 62.5%;
+
+    }
+
+    .mobile-intro {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .ABC {
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        width: auto;
+        font-size: 2.5rem;
+    }
+    
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav ul {
+        padding-left: 0px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    footer ul {
+        padding-left: 0px;
+    }
+
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .btn {
+        font-size: 62.5%;
+        width: 30%;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    textarea {
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+
+    .mobile-intro {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .content {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .ABC {
+        font-size: 2.5rem;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    form {
+        font-size: 120%;
+    }
+
+    form textarea {
+        width: 120%;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+    }
+
 }
